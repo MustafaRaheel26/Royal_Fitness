@@ -954,6 +954,47 @@ span {
     text-decoration: none;
     transition: background-color 0.3s ease, transform 0.3s ease;
   }
+  .navbar-p-2 {
+    display: block;
+    position: fixed;
+    width: 100%;
+    top: 5.5%;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 9%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    transition: all 0.5s ease;
+  }
+  
+  .navbar-p2-ul {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  .navbar-p2-ul li {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--text-color);
+  }
+  
+  .navbar-p2-ul a {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--text-color);
+    margin: 2rem;
+    transition: all 0.5s ease;
+    border-bottom: 3px solid transparent;
+  }
+  .navbar-p2-ul a:hover,
+  .navbar-p2-ul a.active {
+    color: var(--main-color);
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid var(--main-color);
+  }
 }
 
 @media (max-width: 786px) {
@@ -1225,6 +1266,47 @@ span {
     min-width: 18px; /* Ensure it stays round even with single digits */
     height: 18px;
     line-height: 1;
+  }
+  .navbar-p-2 {
+    display: block;
+    position: fixed;
+    width: 100%;
+    top: 5.5%;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 9%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    transition: all 0.5s ease;
+  }
+  
+  .navbar-p2-ul {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  .navbar-p2-ul li {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--text-color);
+  }
+  
+  .navbar-p2-ul a {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--text-color);
+    margin: 2rem;
+    transition: all 0.5s ease;
+    border-bottom: 3px solid transparent;
+  }
+  .navbar-p2-ul a:hover,
+  .navbar-p2-ul a.active {
+    color: var(--main-color);
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid var(--main-color);
   }
 }
 
