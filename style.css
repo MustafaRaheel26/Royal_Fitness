@@ -1271,13 +1271,13 @@ span {
     display: block;
     position: fixed;
     width: 100%;
-    top: 7.5%;
-    right: 0;
+    top: 8.5%;
+    /* right: 0; */
     z-index: 1000;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem 9%;
+    /* padding: 2rem 9%; */
     background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(10px);
     transition: all 0.5s ease;
