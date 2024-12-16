@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Royal Fitness - Cart</title>
+  </head>
+  <body style="background-color: black">
+    <!-- Header Section -->
+    <header>
+      <a href="index.html" class="logo">Royal <span>Fitness</span></a>
+
+      <div class="top-btn">
+        <a href="./index.html" class="nav-btn">
+          <i class="fa-solid fa-house"></i>
+        </a>
+        <a href="./products.html" class="nav-btn">
+          <i class="fa-solid fa-store"></i>
+        </a>
+      </div>
+    </header>
+
+    <!-- Cart Items Section  -->
+
+    <section class="cart-section" id="cart-section" data-aos="zoom-in-down">
+      <h2 class="heading-p" data-aos="zoom-in-down">
+        Your<span>Cart</span>
+      </h2>
+      <div class="products-cards" id="cartData" data-aos="zoom-in">
+         
+      </div>
+      <div class="products-cards" id="totalAmount" >
+
+      </div>
+      <div class="checkout" id="checkout">
+        
+      </div>
+    </section>
+
+    <!-- Footer Section Code  -->
+
+    <footer class="footer">
+      <div class="social">
+        <a href="#"><i class="bx bxl-facebook"></i></a>
+        <a href="#"><i class="bx bxl-instagram"></i></a>
+        <a href="#"><i class="bx bxl-linkedin"></i></a>
+      </div>
+
+      <p class="copyright">&copy; Royal Fitness @2024 - All Rights Reserved</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 300,
+        duration: 1400,
+      });
+    </script>
+    <script src="./cart.js"></script>
+  </body>
+</html>
