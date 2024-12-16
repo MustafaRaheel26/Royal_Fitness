@@ -987,6 +987,16 @@ span {
   .services h2 {
     margin-bottom: 3rem;
   }
+  .hero-btn {
+    display: inline-block;
+    font-size: 1.8rem;
+    color: var(--bg-color);
+    background: var(--main-color);
+    padding: 3rem 4rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
   .hero-background {
     height: 100vh;
   }
@@ -1001,9 +1011,9 @@ span {
     justify-content: center;
   }
   .hero-background .btn {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     font-weight: 600;
-    padding: 1.4rem;
+    padding: 1.2rem;
   }
 
   .hero-background .overlay {
@@ -1015,27 +1025,179 @@ span {
   }
 
   .hero-background h1 {
-    font-size: 5.6rem;
+    font-size: 5rem;
     font-weight: bold;
-    margin-bottom: 1.6rem;
+    margin-bottom: 1.4rem;
   }
 
   .hero-background p {
-    font-size: 2.8rem;
-    margin-bottom: 2.2rem;
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
   }
   .hero-background span {
-    font-size: 5.4rem;
+    font-size: 5rem;
   }
-  .hero-btn {
+  .heading-p {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  header .logo {
+    margin-left: 1rem;
+    padding-left: 1rem;
+  }
+  header .top-btn {
+    margin-right: 1rem;
+    padding-right: 1rem;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    background: var(--snd-bg-color);
+    color: var(--text-color);
+    border-radius: 1.6rem;
+    overflow: hidden;
+    border: 3px solid rgba(238, 238, 238, 0.3);
+    transition: transform 0.3s ease-in-out, border 0.3s ease-in-out,
+      box-shadow 0.3s ease-in-out;
+    margin: 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .card:hover {
+    border: 3px solid var(--main-color);
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+  }
+
+  /* Image Section */
+  .card-image {
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+  }
+
+  .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .card-image img:hover {
+    transform: scale(1.1);
+  }
+
+  /* Content Section */
+  .card-content {
+    padding: 1.5rem;
+    text-align: center;
+  }
+  .heading-p {
+    text-align: center;
+    font-size: 5.5rem;
+    /* padding: 2rem; */
+    margin: 1rem;
+    padding-bottom: 4rem;
+  }
+  .heading-p span {
+    font-size: 6rem;
+    padding: 1rem;
+  }
+  .card-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--main-color);
+  }
+
+  .card-content p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+
+  .price {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+    line-height: 1.2em;
+    letter-spacing: 0.15rem;
+  }
+  .add-to-cart-btn{
     display: inline-block;
-    font-size: 2.4rem;
-    color: var(--bg-color);
+    padding: 0.8rem 1.8rem;
     background: var(--main-color);
-    padding: 1.6rem 3rem;
+    color: var(--bg-color);
+    font-size: 1.6rem;
+    font-weight: 700;
+    border: none;
     border-radius: 5px;
-    text-decoration: none;
+    cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  .btn-cart {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    background: var(--main-color);
+    border-radius: 4.4rem;
+    box-shadow: none;
+    font-size: 1.6rem;
+    color: var(--bg-color);
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.5s ease;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .btn-cart-2 {
+    display: inline-block;
+    padding: 0.2rem 0.8rem;
+    background: var(--main-color);
+    border-radius: 4.4rem;
+    box-shadow: none;
+    font-size: 1.6rem;
+    color: var(--bg-color);
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.5s ease;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .remove-btn {
+    display: inline-block;
+    padding: 0.6rem 1.6rem;
+    background: transparent;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+    border-radius: 1.4rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+    transition: all 0.5s ease;
+    cursor: pointer;
+  }
+  .alert-box {
+    position: fixed;
+    top: 25%;
+    right: 12%;
+    background-color: black;
+    color: var(--main-color);
+    /* border: 2px solid black; */
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1.4rem;
+    font-weight: bold;
+    z-index: 1000;
+    animation: fadeInOut 2.5s ease;
   }
 }
 
