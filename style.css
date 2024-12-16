@@ -1288,15 +1288,19 @@ span {
     text-align: center;
     justify-content: center;
     gap: 0.5rem;
+    margin-left: 0%;
+    padding-left: 0%;
+    padding-right: 0%;
+    margin-right: 0%;
   }
   .navbar-p2-ul li {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 500;
     color: var(--text-color);
   }
   
   .navbar-p2-ul a {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 500;
     color: var(--text-color);
     /* margin: 2rem; */
