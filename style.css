@@ -22,15 +22,15 @@ html {
   overflow-x: hidden;
   --main-color: #45ffca;
   --text-color: #000;
-  width: auto!important;
-  overflow-x: hidden!important;
+  width: auto !important;
+  overflow-x: hidden !important;
 }
 
 body {
   background: var(--bg-color);
   color: var(--text-color);
-  width: auto!important;
-  overflow-x: hidden!important;
+  width: auto !important;
+  overflow-x: hidden !important;
 }
 
 section {
@@ -770,6 +770,15 @@ span {
   display: none;
 }
 
+/* navbar 2 products page  */
+
+.navbar-p2-ul {
+  display: none;
+}
+.navbar-p-3 {
+  display: none;
+}
+
 /* checkout  */
 
 #checkout {
@@ -958,29 +967,30 @@ span {
     display: block;
     position: fixed;
     width: 100%;
-    top: 5.5%;
+    top: 8%;
     right: 0;
     z-index: 1000;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 2rem 9%;
-    background: rgba(0, 0, 0, 0.5);
+    background:rgba(69, 255, 202, 0.4); 
     backdrop-filter: blur(10px);
     transition: all 0.5s ease;
   }
-  
+
   .navbar-p2-ul {
     display: flex;
     text-align: center;
     justify-content: center;
+    gap: 3rem;
   }
   .navbar-p2-ul li {
-    font-size: 1.8rem;
+    font-size: 2.4rem;
     font-weight: 500;
-    color: var(--text-color);
+    color: var(--bg-color);
   }
-  
+
   .navbar-p2-ul a {
     font-size: 1.8rem;
     font-weight: 500;
@@ -993,12 +1003,11 @@ span {
   .navbar-p2-ul a.active {
     color: var(--main-color);
     padding-bottom: 0.5rem;
-    border-bottom: 3px solid var(--main-color);
+    border-bottom: 3px solid var(--bg-color);
   }
 }
 
 @media (max-width: 786px) {
-  
   .home {
     flex-direction: column;
   }
@@ -1048,7 +1057,7 @@ span {
   }
   .hero-background {
     height: 80vh;
-    margin-top: 7rem; 
+    margin-top: 7rem;
     background: url("./GYM_Website_Images/background-image-product.webp")
       no-repeat center center/cover;
     position: relative;
@@ -1063,7 +1072,7 @@ span {
   }
 
   .hero-background .overlay {
-    background: rgba(0, 0, 0, 0.5); 
+    background: rgba(0, 0, 0, 0.5);
     color: var(--text-color);
     text-align: center;
     padding: 4rem;
@@ -1176,7 +1185,7 @@ span {
     line-height: 1.2em;
     letter-spacing: 0.15rem;
   }
-  .add-to-cart-btn{
+  .add-to-cart-btn {
     display: inline-block;
     padding: 0.8rem 1.8rem;
     background: var(--main-color);
@@ -1202,7 +1211,7 @@ span {
     cursor: pointer;
     font-weight: bold;
   }
-  
+
   .btn-cart-2 {
     display: inline-block;
     padding: 0.2rem 0.8rem;
@@ -1217,7 +1226,7 @@ span {
     cursor: pointer;
     font-weight: bold;
   }
-  
+
   .remove-btn {
     display: inline-block;
     padding: 0.6rem 1.6rem;
@@ -1272,13 +1281,11 @@ span {
     position: fixed;
     width: 100%;
     top: 8.5%;
-    /* right: 0; */
     z-index: 1000;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* padding: 2rem 9%; */
-    background: rgba(0, 0, 0, 0.5);
+    background:rgba(69, 255, 202, 0.4); 
     backdrop-filter: blur(10px);
     transition: all 0.5s ease;
   }
@@ -1287,31 +1294,33 @@ span {
     display: flex;
     text-align: center;
     justify-content: center;
-    gap: 0.5rem;
+    gap: 2rem;
     margin-left: 0%;
     padding-left: 0%;
     padding-right: 0%;
     margin-right: 0%;
   }
   .navbar-p2-ul li {
-    font-size: 1.6rem;
+    font-size: 2.4rem;
     font-weight: 500;
-    color: var(--text-color);
+    color: var(--bg-color);
   }
   
   .navbar-p2-ul a {
     font-size: 1.6rem;
     font-weight: 500;
     color: var(--text-color);
-    /* margin: 2rem; */
     transition: all 0.5s ease;
     border-bottom: 3px solid transparent;
+  }
+  .navbar-p2-ul img{
+    color: var(--text-color);
   }
   .navbar-p2-ul a:hover,
   .navbar-p2-ul a.active {
     color: var(--main-color);
     padding-bottom: 0.5rem;
-    border-bottom: 3px solid var(--main-color);
+    border-bottom: 3px solid var(--bg-color);
   }
 }
 
@@ -1327,27 +1336,27 @@ span {
     justify-content: center;
     align-items: center;
     /* padding: 2rem 9%; */
-    background: rgba(0, 0, 0, 0.5);
+    background:rgba(69, 255, 202, 0.4); 
     backdrop-filter: blur(10px);
     transition: all 0.5s ease;
   }
-  
+
   .navbar-p2-ul {
     display: flex;
     text-align: center;
     justify-content: center;
-    gap: 0.5rem;
+    gap: 1.2rem;
     margin-left: 0%;
     padding-left: 0%;
     padding-right: 0%;
     margin-right: 0%;
   }
   .navbar-p2-ul li {
-    font-size: 1.6rem;
+    font-size: 2.4rem;
     font-weight: 500;
-    color: var(--text-color);
+    color: var(--bg-color);
   }
-  
+
   .navbar-p2-ul a {
     font-size: 1.6rem;
     font-weight: 500;
@@ -1360,7 +1369,7 @@ span {
   .navbar-p2-ul a.active {
     color: var(--main-color);
     padding-bottom: 0.5rem;
-    border-bottom: 3px solid var(--main-color);
+    border-bottom: 3px solid var(--bg-color);
   }
   .hero-background {
     height: 100vh;
@@ -1537,7 +1546,7 @@ span {
     line-height: 1.2em;
     letter-spacing: 0.15rem;
   }
-  .add-to-cart-btn{
+  .add-to-cart-btn {
     display: inline-block;
     padding: 0.8rem 1.8rem;
     background: var(--main-color);
@@ -1563,7 +1572,7 @@ span {
     cursor: pointer;
     font-weight: bold;
   }
-  
+
   .btn-cart-2 {
     display: inline-block;
     padding: 0.2rem 0.8rem;
@@ -1578,7 +1587,7 @@ span {
     cursor: pointer;
     font-weight: bold;
   }
-  
+
   .remove-btn {
     display: inline-block;
     padding: 0.6rem 1.6rem;
@@ -1594,7 +1603,7 @@ span {
   .alert-box {
     position: fixed;
     top: 25%;
-    right: 18%; 
+    right: 18%;
     background-color: black;
     color: var(--main-color);
     /* border: 2px solid black; */
@@ -1625,7 +1634,12 @@ span {
     height: 18px;
     line-height: 1;
   }
-  
+  .services-content {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 450px) {
