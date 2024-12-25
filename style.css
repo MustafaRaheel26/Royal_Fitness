@@ -863,7 +863,7 @@ span {
   }
 
   .hero-background .overlay {
-    background: rgba(0, 0, 0, 0.5); /* Adds dark overlay for text readability */
+    background: rgba(0, 0, 0, 0.5); 
     color: var(--text-color);
     text-align: center;
     padding: 4rem;
